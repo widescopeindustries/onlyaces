@@ -16,3 +16,9 @@
 - What is the realistic MVP cost range?
 - How would scoring, cameras, and verification work?
 - Where does the operator edge really come from?
+
+## Internal-only note
+
+If the discussion becomes serious, disclose the personal background issue privately before a formal
+deal structure conversation. Keep the discussion factual, concise, and solution-oriented. The
+business can be structured with a non-public concept-partner role if needed.
