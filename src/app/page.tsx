@@ -39,10 +39,10 @@ const marketStats = [
       "NGF's Texas snapshot counted 715 facilities statewide, reinforcing Texas as a true golf state rather than a niche market.",
   },
   {
-    label: "Lucas income",
-    value: "$221k",
+    label: "Collin County income",
+    value: "$121.6K",
     detail:
-      "U.S. Census QuickFacts puts Lucas median household income at $221,364 in 2024 dollars.",
+      "U.S. Census QuickFacts puts Collin County median household income at $121,600 in 2024 dollars.",
   },
   {
     label: "North Texas pro density",
@@ -122,7 +122,7 @@ const marketProof = [
 const deckOutline = [
   "1. The blind spot: why the model never spread",
   "2. The unlock: land-based water-target flagship",
-  "3. Why North Texas and why Lucas",
+  "3. Why North Texas and where first",
   "4. MVP spec: bays, target, tracking, cameras, pricing",
   "5. Economics: flagship path vs replication path",
   "6. Programming upside: pro board, content, earned media",
@@ -162,7 +162,7 @@ const coreDefinition = [
 ];
 
 const withChris = [
-  "Lucas becomes more than a parcel. It becomes the flagship proof that the model works stateside without natural water.",
+  "The first site becomes the flagship proof that the model works stateside without natural water.",
   "The concept gets a fast-moving operator with land, visibility, credibility, and the ability to push from idea into execution.",
   "The site becomes a possible content engine: leaderboards, challenge nights, earned media, and local golf-world gravity.",
 ];
@@ -174,14 +174,14 @@ const offerToChris = [
       "He already believes in the category. The offer is the missing adaptation: remove the lake bottleneck and let the prize model spread.",
   },
   {
-    title: "A flagship thesis for land he already controls",
+    title: "A flagship thesis for the right parcel",
     body:
-      "The concept is not asking him to chase a rare waterfront or invent a new consumer behavior. It localizes a model he already likes onto a tract that fits his holdco instincts.",
+      "The concept is not asking him to chase a rare waterfront or invent a new consumer behavior. It localizes a model he already likes onto a parcel that fits the flagship thesis and can move.",
   },
   {
     title: "A template that can replicate",
     body:
-      "If Lucas proves the flagship, the value is no longer one site. The value is a cookie-cutter template for 2- to 3-acre tracts almost anywhere.",
+      "If the flagship proves the model, the value is no longer one site. The value is a cookie-cutter template for 2- to 3-acre tracts almost anywhere.",
   },
 ];
 
@@ -195,12 +195,12 @@ export default function Home() {
               <div className="eyebrow">Private flagship brief</div>
               <p className="mt-3 max-w-2xl text-sm text-ink-soft md:text-base">
                 Internal pitch materials for <strong>Only Aces</strong>. Built to
-                explain the unlock, the flagship case for Lucas, and the path to
-                a repeatable U.S. template.
+                explain the unlock, the flagship case for North DFW, and the
+                path to a repeatable U.S. template.
               </p>
             </div>
             <div className="rounded-full border border-line bg-panel-strong px-4 py-2 text-xs uppercase tracking-[0.24em] text-ink-soft">
-              onlyaces.biz now • onlyaces.com later
+              onlyaces.online • private deck live
             </div>
           </div>
         </div>
@@ -312,9 +312,9 @@ export default function Home() {
                 The market backdrop is not theoretical
               </h2>
               <p className="mt-4 max-w-3xl text-base leading-7 text-ink-soft">
-                The case for a Lucas flagship gets stronger when you zoom out:
-                golf participation is large and growing, Texas is already one of
-                the deepest golf states in the country, and the North Texas
+                The flagship case gets stronger when you zoom out: golf
+                participation is large and growing, Texas is already one of the
+                deepest golf states in the country, and the North Texas
                 corridor now has institutional golf gravity through PGA Frisco.
               </p>
             </div>

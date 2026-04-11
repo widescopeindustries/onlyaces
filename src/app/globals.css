@@ -297,6 +297,170 @@ a {
   border: 1px solid rgba(255, 252, 246, 0.1);
 }
 
+.chris-shell {
+  background:
+    radial-gradient(circle at top left, rgba(53, 137, 223, 0.16), transparent 26%),
+    radial-gradient(circle at 85% 10%, rgba(30, 196, 147, 0.14), transparent 24%),
+    linear-gradient(180deg, #07131d 0%, #091724 38%, #0d1f16 100%);
+  color: #edf4f8;
+}
+
+.chris-shell .eyebrow {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.chris-shell .faint-rule {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+}
+
+.chris-shell .deck-list li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.chris-shell .source-link {
+  text-decoration-color: rgba(255, 255, 255, 0.28);
+}
+
+.chris-shell .source-link:hover {
+  color: white;
+}
+
+.chris-hero,
+.chris-nav,
+.chris-card,
+.chris-aside,
+.chris-feature {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+}
+
+.chris-hero::before,
+.chris-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(124, 210, 255, 0.14), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 50%);
+  pointer-events: none;
+}
+
+.chris-hero {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(253, 196, 98, 0.16), transparent 28%),
+    linear-gradient(145deg, rgba(8, 20, 32, 0.94), rgba(7, 16, 28, 0.88));
+}
+
+.chris-nav {
+  background: rgba(7, 18, 29, 0.72);
+}
+
+.chris-card {
+  background: rgba(8, 18, 29, 0.7);
+}
+
+.chris-aside {
+  padding: 1rem;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top, rgba(64, 181, 235, 0.16), transparent 48%),
+    rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.chris-feature {
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.03);
+}
+
+.chris-chip,
+.chris-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.chris-chip {
+  padding: 0.65rem 0.9rem;
+}
+
+.chris-pill {
+  padding: 0.65rem 0.9rem;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.chris-pill:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.chris-lane {
+  background:
+    radial-gradient(circle at 50% 16%, rgba(114, 208, 255, 0.18), transparent 20%),
+    linear-gradient(180deg, rgba(5, 12, 19, 0.22), rgba(3, 9, 13, 0.86)),
+    linear-gradient(180deg, rgba(52, 114, 87, 0.8), rgba(12, 57, 31, 0.98));
+}
+
+.chris-lane::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 20%),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 235, 175, 0.28) 0,
+      rgba(255, 235, 175, 0.28) 24px,
+      transparent 24px,
+      transparent 76px
+    );
+}
+
+.chris-lane::after {
+  top: 9%;
+  height: 10px;
+  background: linear-gradient(90deg, transparent, rgba(135, 217, 255, 0.45), transparent);
+  box-shadow: 0 0 22px rgba(91, 198, 255, 0.22);
+}
+
+.chris-lane .lane-pool {
+  box-shadow:
+    0 0 90px rgba(82, 190, 255, 0.32),
+    0 0 0 14px rgba(255, 255, 255, 0.08);
+}
+
+.chris-lane .lane-green {
+  box-shadow:
+    0 0 24px rgba(20, 56, 24, 0.45),
+    0 0 44px rgba(126, 231, 126, 0.16);
+}
+
+.chris-lane .lane-bay {
+  background:
+    linear-gradient(180deg, rgba(36, 31, 63, 0.95), rgba(15, 18, 29, 0.96)),
+    rgba(13, 15, 26, 0.96);
+}
+
+.chris-lane .lane-stall {
+  background:
+    linear-gradient(180deg, rgba(64, 167, 222, 0.16), rgba(31, 85, 115, 0.06)),
+    rgba(255, 255, 255, 0.06);
+}
+
 .section-title {
   font-family: var(--font-display), sans-serif;
   font-size: clamp(2rem, 4vw, 3.8rem);
