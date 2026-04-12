@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Only Aces | Brief for Chris Koerner",
@@ -35,185 +36,168 @@ const proofPoints = [
 ];
 
 const behaviorPoints = [
-  "The visible jackpot is the hook.",
-  "The fixed challenge shot drives repeat attempts.",
-  "The math favors the operator more than a normal range model does.",
+  { label: "The hook", body: "The visible jackpot is the draw. Not the range. Not the bucket." },
+  { label: "The engine", body: "A fixed challenge shot creates repeat attempts — the exact loop operators want." },
+  { label: "The math", body: "Prize structure favors the operator in a way that a normal range model never does." },
 ];
 
 const customerLayers = [
   {
     title: "Casual players",
-    body:
-      "They are buying the moment, the prize, and the story. The money is the gravity.",
+    body: "They are buying the moment, the prize, and the story. The money is the gravity.",
+    icon: "◎",
   },
   {
     title: "Avid golfers",
-    body:
-      "They still get real reps, but now there is a reason to care beyond empty bucket volume.",
+    body: "They still get real reps, but now there is a reason to care beyond empty bucket volume.",
+    icon: "◈",
   },
   {
     title: "Better players",
-    body:
-      "For strong players and pros, the draw becomes precision, status, leaderboard position, and content.",
+    body: "For strong players and pros, the draw becomes precision, status, leaderboard, and content.",
+    icon: "◉",
   },
 ];
 
 const proAngle = [
-  "The base case does not depend on pros showing up. Retail demand has to work on its own.",
-  "If pros materially change payout risk, that layer can be structured separately with capped attempts, sponsor-backed prizes, or event-specific rules.",
-  "The real upside of pros is attention: spectators, clips, legitimacy, and a reason for the broader market to care.",
+  {
+    label: "Base case",
+    body: "The math works without pros. Retail demand has to stand on its own.",
+  },
+  {
+    label: "Risk management",
+    body: "If pros change payout dynamics, that layer can be ring-fenced: capped attempts, sponsor-backed prizes, event rules.",
+  },
+  {
+    label: "Real upside",
+    body: "Pros bring attention — spectators, clips, legitimacy, and a reason for the broader Dallas golf market to care.",
+  },
 ];
 
 const siteCandidates = [
   {
-    title: "Eldorado Parkway + US-75 corridor",
-    strength: "Dream-corner flagship profile",
+    title: "Eldorado Pkwy + US-75",
+    strength: "Dream-corner flagship",
     risk:
       "Best visibility and demographics, but also the biggest rent and the biggest consequence if the first format is wrong.",
+    tier: "1",
   },
   {
     title: "SWQ DNT + Longwood, Frisco",
-    strength: "North DFW corridor exposure",
+    strength: "North DFW corridor",
     risk:
-      "Still in the right gravity zone, but likely less emotionally obvious than Eldorado/75 as a flagship statement.",
+      "Right gravity zone, but likely less emotionally obvious than Eldorado/75 as a flagship statement.",
+    tier: "2",
   },
   {
-    title: "Craig Ranch / 121 corridor",
-    strength: "Golf-adjacent customer comprehension",
+    title: "Craig Ranch / 121",
+    strength: "Golf-adjacent comprehension",
     risk:
       "May help the story click faster, but the site still has to work as a standalone premium challenge venue.",
+    tier: "3",
   },
 ];
 
 const proofPath = [
-  "Choose one North DFW location profile that validates the actual market thesis, not just cheap mechanics.",
+  "Choose one North DFW location that validates the actual market thesis, not just cheap mechanics.",
   "Lock the exact 111-yard format, target design, camera stack, and payout adjudication flow.",
-  "Build the first site as a flagship with identity and energy, not a half-built kiosk pretending to be a concept.",
+  "Build the first site as a flagship with identity and energy — not a half-built kiosk.",
 ];
 
 const edgeChoices = [
-  "One iconic shot instead of a watered-down multi-range product.",
+  "One iconic shot distance instead of a watered-down multi-range product.",
   "Premium pricing architecture instead of bucket-value comparison shopping.",
   "Cameras, rules, and leaderboard logic that make the challenge feel real and content-ready.",
 ];
 
 const asks = [
-  "Pressure-test the non-lake thesis together in 15-20 minutes.",
+  "Pressure-test the non-lake thesis together in 15–20 minutes.",
   "Pick one North DFW location profile worth diligencing first.",
-  "If the thesis still holds, define a structure where I stay involved as founding concept partner.",
+  "If the thesis holds, define a structure where I stay involved as founding concept partner.",
+];
+
+const navItems = [
+  { href: "#thesis", label: "Thesis" },
+  { href: "#behavior", label: "Behavior" },
+  { href: "#market", label: "Market" },
+  { href: "#pros", label: "Pro Angle" },
+  { href: "#sites", label: "Location" },
+  { href: "#proof", label: "Proof" },
 ];
 
 export default function ChrisBriefPage() {
   return (
-    <main className="page-shell chris-shell pb-20">
-      <section className="container-frame pt-6 md:pt-8">
-        <div className="chris-hero rounded-[34px] px-5 py-5 md:px-8 md:py-7">
-          <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
-            <div className="max-w-4xl">
-              <Link
-                href="/"
-                className="eyebrow transition hover:bg-white/14"
-              >
-                Only Aces
-              </Link>
-              <h1 className="section-title mt-5 max-w-5xl">
-                The lake was never the business. The prize behavior is.
-              </h1>
-              <p className="mt-4 max-w-3xl text-base leading-7 text-white/74 md:text-lg md:leading-8">
-                This is the tightest version of the idea: a land-based flagship
-                built around one iconic shot, visible prize gravity, and a
-                format that can scale without needing natural water.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em] text-white/62">
-                <span className="chris-chip">111-yard challenge</span>
-                <span className="chris-chip">North DFW flagship</span>
-                <span className="chris-chip">Prize-first economics</span>
-              </div>
-            </div>
+    <main className="page-shell chris-shell pb-28">
 
-            <div className="chris-aside md:max-w-xs">
-              <p className="text-xs uppercase tracking-[0.24em]">
-                Private brief
-              </p>
-              <p className="mt-3 font-display text-3xl tracking-[-0.04em] text-white">
-                5 minutes
-              </p>
-              <p className="mt-2 leading-6 text-white/72">
-                Short, direct, and built around the real question: can the draw
-                become stronger once the format is freed from the lake?
-              </p>
-            </div>
+      {/* ─── HERO ─────────────────────────────────────────────────────────── */}
+      <section className="chris-hero-section">
+        <div className="chris-hero-bg-image">
+          <Image
+            src="/images/exterior.png"
+            alt="Only Aces flagship concept rendering"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="chris-hero-bg-overlay" />
+        </div>
+        <div className="container-frame relative z-10 pt-10 pb-12 md:pt-14 md:pb-16">
+          <Link href="/" className="eyebrow transition hover:bg-white/14">
+            Only Aces
+          </Link>
+          <h1 className="section-title mt-6 max-w-5xl">
+            The lake was never the business.<br />The prize behavior is.
+          </h1>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-white/74">
+            A land-based flagship built around one iconic shot, visible prize
+            gravity, and a format that can scale without natural water.
+          </p>
+          <div className="mt-7 flex flex-wrap items-center gap-3">
+            <span className="chris-chip">111-yard challenge</span>
+            <span className="chris-chip">North DFW flagship</span>
+            <span className="chris-chip">Prize-first economics</span>
+            <span className="chris-read-badge">5 min read</span>
           </div>
         </div>
       </section>
 
-      <section className="container-frame pt-5 md:pt-6">
+      {/* ─── STICKY NAV ───────────────────────────────────────────────────── */}
+      <div className="container-frame pt-4 md:pt-5">
         <nav className="chris-nav sticky top-4 z-20 rounded-[24px] px-3 py-3 md:px-4">
           <div className="flex flex-wrap gap-2 text-xs uppercase tracking-[0.16em] text-white/62">
-            <a
-              href="#thesis"
-              className="chris-pill"
-            >
-              1 Thesis
-            </a>
-            <a
-              href="#behavior"
-              className="chris-pill"
-            >
-              2 Behavior
-            </a>
-            <a
-              href="#market"
-              className="chris-pill"
-            >
-              3 Market
-            </a>
-            <a
-              href="#pros"
-              className="chris-pill"
-            >
-              4 Pro Angle
-            </a>
-            <a
-              href="#sites"
-              className="chris-pill"
-            >
-              5 Location
-            </a>
-            <a
-              href="#proof"
-              className="chris-pill"
-            >
-              6 Proof
-            </a>
+            {navItems.map((item) => (
+              <a key={item.href} href={item.href} className="chris-pill">
+                {item.label}
+              </a>
+            ))}
           </div>
         </nav>
-      </section>
+      </div>
 
-      <section id="thesis" className="container-frame pt-8 md:pt-10">
-        <div className="grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
+      {/* ─── 1. THESIS ────────────────────────────────────────────────────── */}
+      <section id="thesis" className="container-frame pt-10 md:pt-14">
+        <div className="grid gap-5 md:grid-cols-[1.1fr_0.9fr]">
+          <article className="chris-card rounded-[34px] px-6 py-7 md:px-8 md:py-8">
             <div className="eyebrow">1. The thesis</div>
-            <h2 className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
-              This is less a golf business than a business built on golf behavior.
+            <h2 className="mt-5 font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white md:text-5xl">
+              Less a golf business. More a business built on golf behavior.
             </h2>
-            <p className="mt-4 text-base leading-7 text-white/74">
-              I think the original model got remembered as a lake business
-              because the lake is the memorable visual. The deeper truth is that
-              the engine is a simple challenge shot attached to a highly visible
-              prize and repeat-attempt psychology.
+            <p className="mt-5 text-base leading-7 text-white/70">
+              The original model got remembered as a lake business because the
+              lake is the memorable visual. The deeper truth is that the engine
+              is a simple challenge shot attached to a highly visible prize and
+              repeat-attempt psychology. Remove the lake dependency and the whole
+              thing becomes portable.
             </p>
-            <div className="faint-rule my-6" />
-            <div className="chris-feature px-4 py-4">
-              <p className="text-xs uppercase tracking-[0.24em] text-white/55">
-                Cleanest version
+            <div className="faint-rule my-7" />
+            <div className="chris-callout px-5 py-5">
+              <p className="text-xs uppercase tracking-[0.24em] text-white/50">
+                The cleanest version of this
               </p>
-              <p className="mt-3 font-display text-3xl tracking-[-0.04em] text-white">
-                Category-level proof exists already.
-              </p>
-              <p className="mt-3 text-sm leading-6 text-white/68">
-                The open question is not whether people respond to the behavior.
-                It is what the best U.S. land-based flagship format looks like.
+              <p className="mt-3 font-display text-2xl tracking-[-0.03em] text-white">
+                Category-level proof exists already. The open question is what
+                the best U.S. land-based flagship format looks like.
               </p>
             </div>
           </article>
@@ -224,7 +208,7 @@ export default function ChrisBriefPage() {
                 <div className="lane-green" />
                 <div className="lane-flag" />
               </div>
-              <div className="absolute left-1/2 top-[39%] -translate-x-1/2 rounded-full border border-white/16 bg-black/14 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/80">
+              <div className="absolute left-1/2 top-[39%] -translate-x-1/2 rounded-full border border-white/16 bg-black/20 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/80 backdrop-blur-sm">
                 111 yards
               </div>
               <div className="absolute left-1/2 top-[48%] -translate-x-1/2 rounded-full bg-white/10 px-3 py-1 text-[0.68rem] uppercase tracking-[0.25em] text-white/70 backdrop-blur-sm">
@@ -246,189 +230,243 @@ export default function ChrisBriefPage() {
         </div>
       </section>
 
+      {/* ─── 2. BEHAVIOR ──────────────────────────────────────────────────── */}
       <section id="behavior" className="container-frame pt-10 md:pt-14">
-        <div className="grid gap-5 md:grid-cols-[0.95fr_1.05fr]">
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
-            <div className="eyebrow">2. What survives without the lake</div>
-            <h2 className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
-              It may look like a range, but it should not feel or monetize like one.
-            </h2>
-            <p className="mt-4 text-base leading-7 text-white/74">
-              Nets, bays, targets, and golf swings will make this look like a
-              compact range from the outside. That is fine. The customer is not
-              paying for anonymous bucket volume. They are paying for a focused
-              shot, a visible prize, and a reason to care.
-            </p>
-            <ul className="deck-list mt-6">
-              {behaviorPoints.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
+        <div className="chris-card rounded-[36px] px-6 py-7 md:px-8 md:py-8">
+          <div className="eyebrow">2. What survives without the lake</div>
+          <div className="mt-5 grid gap-8 md:grid-cols-[1fr_1.1fr]">
+            <div>
+              <h2 className="font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white">
+                It may look like a range. It should not feel or monetize like one.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-white/70">
+                Nets, bays, targets, and golf swings will make this look like a
+                compact range from the outside. The customer is not paying for
+                anonymous bucket volume. They are paying for a focused shot, a
+                visible prize, and a reason to care.
+              </p>
+              <div className="mt-6 grid gap-3">
+                {behaviorPoints.map((item) => (
+                  <div key={item.label} className="chris-feature px-4 py-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-white/50">
+                      {item.label}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-white/80">
+                      {item.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-5">
+              <div className="relative w-full overflow-hidden rounded-[26px] border border-white/10 aspect-[4/3] shadow-2xl">
+                <Image
+                  src="/images/interior.png"
+                  alt="Premium interior bay with jackpot leaderboard"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-white/45 mb-4">Who responds</p>
+                <div className="grid gap-3">
+                  {customerLayers.map((item) => (
+                    <div key={item.title} className="chris-feature flex items-start gap-3 px-4 py-4">
+                      <span className="mt-0.5 text-xl text-white/30">{item.icon}</span>
+                      <div>
+                        <h3 className="text-sm font-semibold text-white">{item.title}</h3>
+                        <p className="mt-1 text-xs leading-5 text-white/60">{item.body}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
-            <div className="eyebrow">Who responds</div>
-            <div className="mt-4 grid gap-4">
-              {customerLayers.map((item) => (
+      {/* ─── 3. MARKET ────────────────────────────────────────────────────── */}
+      <section id="market" className="container-frame pt-10 md:pt-14">
+        <div className="chris-card rounded-[36px] px-6 py-7 md:px-8 md:py-8">
+          <div className="eyebrow">3. Why North DFW</div>
+          <div className="mt-5 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+            <div>
+              <h2 className="font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white">
+                Not just Texas.<br />North DFW specifically.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-white/70">
+                If this were being localized anywhere in the U.S., North DFW is
+                one of the cleanest places to try. Affluent households, deep golf
+                gravity, high-traffic suburban corridors, and a real shot at word
+                of mouth and content acceleration.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {proofPoints.map((item) => (
                 <article
-                  key={item.title}
+                  key={item.stat + item.label}
                   className="chris-feature px-4 py-5"
                 >
-                  <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-white/68">
-                    {item.body}
+                  <div className="metric-value text-white">{item.stat}</div>
+                  <p className="mt-3 text-sm font-medium leading-6 text-white">
+                    {item.label}
                   </p>
+                  <a
+                    className="source-link mt-3 inline-block text-xs uppercase tracking-[0.2em] text-white/45"
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.sourceLabel}
+                  </a>
                 </article>
               ))}
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="market" className="container-frame pt-10 md:pt-14">
-        <div className="chris-card rounded-[36px] px-5 py-6 md:px-8 md:py-8">
-          <div className="eyebrow">3. Why North DFW</div>
-          <h2 className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
-            Not just Texas. North DFW specifically.
-          </h2>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-white/74">
-            If this were being localized anywhere in the U.S., North DFW is one
-            of the cleanest places to try. It has affluent households, deep golf
-            gravity, high-traffic suburban corridors, and a real shot at word of
-            mouth and content acceleration.
-          </p>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {proofPoints.map((item) => (
-              <article
-                key={item.stat + item.label}
-                className="chris-feature px-4 py-5"
-              >
-                <div className="metric-value text-white">{item.stat}</div>
-                <p className="mt-3 text-sm font-medium leading-6 text-white">
-                  {item.label}
-                </p>
-                <a
-                  className="source-link mt-3 inline-block text-xs uppercase tracking-[0.2em] text-white/58"
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {item.sourceLabel}
-                </a>
-              </article>
-            ))}
           </div>
         </div>
       </section>
 
+      {/* ─── 4. PRO ANGLE ─────────────────────────────────────────────────── */}
       <section id="pros" className="container-frame pt-10 md:pt-14">
-        <div className="grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
+        <div className="grid gap-5 md:grid-cols-[1.1fr_0.9fr]">
+          <article className="chris-card rounded-[34px] px-6 py-7 md:px-8 md:py-8">
             <div className="eyebrow">4. The pro angle</div>
-            <h2 className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
+            <h2 className="mt-5 font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white">
               Pros are upside, not the foundation.
             </h2>
-            <p className="mt-4 text-base leading-7 text-white/74">
+            <p className="mt-5 text-base leading-7 text-white/70">
               One fair concern is that strong players could change the odds
-              against the house. I do not think that should drive the base-case
-              model. The core economics should work without pros. If the pro
-              layer ever changes payout dynamics, it should be treated as a
-              separate programmed event product rather than mixed into the
-              everyday retail model.
+              against the house. The core economics should work without pros. If
+              the pro layer ever changes payout dynamics, it gets treated as a
+              separate programmed event — not mixed into the everyday retail model.
             </p>
           </article>
 
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
-            <div className="eyebrow">Why it still matters</div>
-            <ul className="deck-list mt-5">
+          <article className="chris-card rounded-[34px] px-6 py-7">
+            <p className="text-xs uppercase tracking-[0.2em] text-white/45">Why it still matters</p>
+            <div className="mt-4 grid gap-3">
               {proAngle.map((item) => (
-                <li key={item}>{item}</li>
+                <div key={item.label} className="chris-feature px-4 py-4">
+                  <p className="text-[0.7rem] uppercase tracking-[0.2em] text-white/45">{item.label}</p>
+                  <p className="mt-1.5 text-sm leading-6 text-white/78">{item.body}</p>
+                </div>
               ))}
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="sites" className="container-frame pt-10 md:pt-14">
-        <div className="chris-card rounded-[36px] px-5 py-6 md:px-8 md:py-8">
-          <div className="eyebrow">5. The first flagship profile</div>
-          <h2 className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
-            The job is finding the right corridor, not defending one address.
-          </h2>
-          <p className="mt-4 max-w-3xl text-base leading-7 text-white/74">
-            The real question is which North DFW location gives the flagship
-            the best chance to prove the model correctly and read immediately
-            as a premium challenge concept.
-          </p>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {siteCandidates.map((item) => (
-              <article
-                key={item.title}
-                className="chris-feature px-5 py-5"
-              >
-                <p className="text-xs uppercase tracking-[0.24em] text-white/55">
-                  {item.strength}
-                </p>
-                <h3 className="mt-3 text-xl font-semibold leading-7 text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-white/68">
-                  {item.risk}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="proof" className="container-frame pt-10 md:pt-14">
-        <div className="grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
-            <div className="eyebrow">6. How to prove it correctly</div>
-            <h2 className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
-              The real question is how to prove it without half-assing it.
-            </h2>
-            <p className="mt-4 text-base leading-7 text-white/74">
-              I think the odds are already structurally in our favor. The work
-              is choosing the format and the site discipline that tilt them even
-              further.
-            </p>
-            <ul className="deck-list mt-6">
-              {proofPath.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-
-          <article className="chris-card rounded-[34px] px-5 py-6 md:px-7 md:py-7">
-            <div className="eyebrow">What tilts the odds further</div>
-            <ul className="deck-list mt-5">
-              {edgeChoices.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <div className="faint-rule my-6" />
-            <h3 className="font-display text-3xl tracking-[-0.04em]">
-              If this still feels live, here is what I would value next.
-            </h3>
-            <ul className="deck-list mt-5">
-              {asks.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <div className="chris-feature mt-6 px-4 py-4">
-              <p className="text-xs uppercase tracking-[0.24em] text-white/55">
-                Contact
-              </p>
-              <p className="mt-2 font-display text-3xl tracking-[-0.04em] text-white">
-                Lyndon | 682.999.0953
-              </p>
             </div>
           </article>
         </div>
       </section>
+
+      {/* ─── 5. SITES ─────────────────────────────────────────────────────── */}
+      <section id="sites" className="container-frame pt-10 md:pt-14">
+        <div className="chris-card rounded-[36px] px-6 py-7 md:px-8 md:py-8">
+          <div className="eyebrow">5. The first flagship profile</div>
+          <div className="mt-5 grid gap-6 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+            <div>
+              <h2 className="font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white">
+                Find the right corridor. Don't defend one address.
+              </h2>
+              <p className="mt-4 text-base leading-7 text-white/70">
+                The real question is which North DFW location gives the flagship
+                the best chance to prove the model correctly and read immediately
+                as a premium challenge concept.
+              </p>
+            </div>
+            <div className="grid gap-4">
+              {siteCandidates.map((item) => (
+                <article key={item.title} className="chris-feature chris-site-card px-5 py-5">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.22em] text-white/45">
+                        {item.strength}
+                      </p>
+                      <h3 className="mt-2 text-lg font-semibold leading-6 text-white">
+                        {item.title}
+                      </h3>
+                    </div>
+                    <span className="chris-tier-badge">#{item.tier}</span>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-white/60">{item.risk}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 6. PROOF / CTA ───────────────────────────────────────────────── */}
+      <section id="proof" className="container-frame pt-10 md:pt-14">
+        <div className="grid gap-5 md:grid-cols-[1.1fr_0.9fr]">
+          <article className="chris-card rounded-[34px] px-6 py-7 md:px-8 md:py-8">
+            <div className="eyebrow">6. How to prove it correctly</div>
+            <h2 className="mt-5 font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white">
+              The real question is how to prove it without half-assing it.
+            </h2>
+            <p className="mt-5 text-base leading-7 text-white/70">
+              The odds are already structurally in our favor. The work is
+              choosing the format and the site discipline that tilt them even
+              further.
+            </p>
+            <div className="mt-6 grid gap-3">
+              {proofPath.map((item, i) => (
+                <div key={item} className="chris-feature flex items-start gap-3 px-4 py-4">
+                  <span className="chris-step-num">{i + 1}</span>
+                  <p className="text-sm leading-6 text-white/78">{item}</p>
+                </div>
+              ))}
+            </div>
+            <div className="faint-rule my-7" />
+            <p className="text-xs uppercase tracking-[0.2em] text-white/45 mb-4">What tilts the odds further</p>
+            <div className="grid gap-3">
+              {edgeChoices.map((item) => (
+                <div key={item} className="chris-feature flex items-start gap-2 px-4 py-3">
+                  <span className="mt-0.5 text-green-400/70">✓</span>
+                  <p className="text-sm leading-6 text-white/78">{item}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <div className="flex flex-col gap-5">
+            <article className="chris-card rounded-[34px] px-6 py-7">
+              <p className="text-xs uppercase tracking-[0.2em] text-white/45">
+                If this still feels live
+              </p>
+              <h3 className="mt-4 font-display text-3xl tracking-[-0.04em] text-white leading-tight">
+                Here is what I would value next.
+              </h3>
+              <div className="mt-5 grid gap-3">
+                {asks.map((item, i) => (
+                  <div key={item} className="chris-feature flex items-start gap-3 px-4 py-4">
+                    <span className="chris-step-num">{i + 1}</span>
+                    <p className="text-sm leading-6 text-white/78">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </article>
+
+            <div className="chris-cta-card rounded-[34px] px-6 py-7">
+              <p className="text-xs uppercase tracking-[0.22em] text-white/50">
+                Let&apos;s talk
+              </p>
+              <p className="mt-4 font-display text-4xl tracking-[-0.04em] text-white">
+                Lyndon
+              </p>
+              <a
+                href="tel:6829990953"
+                className="mt-2 block font-display text-3xl tracking-[-0.02em] text-white/70 transition hover:text-white"
+              >
+                682.999.0953
+              </a>
+              <p className="mt-4 text-sm leading-6 text-white/50">
+                Private brief · North DFW flagship · Only Aces
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

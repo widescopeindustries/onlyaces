@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const demandSignals = [
   {
     label: "Core idea",
@@ -236,6 +238,16 @@ export default function Home() {
                   </p>
                 </article>
               ))}
+            </div>
+
+            <div className="mt-8 relative w-full overflow-hidden rounded-[26px] border border-line aspect-[16/9]">
+              <Image
+                src="/images/exterior.png"
+                alt="Proposed Only Aces Land-Based Flagship Concept"
+                fill
+                className="object-cover"
+                unoptimized
+              />
             </div>
           </div>
 
