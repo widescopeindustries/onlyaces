@@ -167,8 +167,8 @@ export default function ChrisPlanPage() {
             <h3 className="text-xs uppercase tracking-[0.2em] text-white/40 mb-6">The "Shoestring" Buildout</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <a href="https://www.usnetting.com/sports-netting/golf-netting/driving-range-netting/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">Netting (25k sq ft)</a>
-                <span className="text-white">$8,270</span>
+                <a href="https://www.usnetting.com/sports-netting/golf-netting/driving-range-netting/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">Netting (Economy Stack - 600&apos; x 37&apos;)</a>
+                <span className="text-white">$3,515</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
                 <a href="https://www.facebook.com/groups/735361224811178/posts/1506513927695900/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">15x Utility Poles ($1/ft)</a>
@@ -192,7 +192,7 @@ export default function ChrisPlanPage() {
               </li>
               <li className="pt-2 flex justify-between font-bold text-lg text-blue-400">
                 <span>Total Upfront</span>
-                <span>~$22,970</span>
+                <span>~$18,215</span>
               </li>
             </ul>
           </div>
