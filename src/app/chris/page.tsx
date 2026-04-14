@@ -76,24 +76,24 @@ const proAngle = [
 
 const siteCandidates = [
   {
-    title: "Eldorado Pkwy + US-75",
-    strength: "Dream-corner flagship",
+    title: "2511 CR 376, Anna, TX",
+    strength: "The Frictionless Sandbox (No Permitting)",
     risk:
-      "Best visibility and demographics, but also the biggest rent and the biggest consequence if the first format is wrong.",
-    tier: "1",
+      "2.39 acres outside city limits. Advertised with 'No City Permitting or C.O. required.' Includes an existing 735 SF office. At $5k/mo, this is the lowest-friction playground to prove the unit economics before hitting a high-exposure corridor.",
+    tier: "1 (Test)",
+  },
+  {
+    title: "Eldorado Pkwy + US-75",
+    strength: "The Scale Target: Dream-corner flagship",
+    risk:
+      "Unmatched retail gravity. High visibility removes the need for expensive customer acquisition. This is where we go once the Anna site proves the conversion math.",
+    tier: "2 (Scale)",
   },
   {
     title: "SWQ DNT + Longwood, Frisco",
     strength: "North DFW corridor",
     risk:
-      "Right gravity zone, but likely less emotionally obvious than Eldorado/75 as a flagship statement.",
-    tier: "2",
-  },
-  {
-    title: "Craig Ranch / 121",
-    strength: "Golf-adjacent comprehension",
-    risk:
-      "May help the story click faster, but the site still has to work as a standalone premium challenge venue.",
+      "High demographics and proximity to PGA HQ, but requires more intentional 'destination' marketing than Eldorado/75.",
     tier: "3",
   },
 ];
@@ -111,18 +111,17 @@ const edgeChoices = [
 ];
 
 const asks = [
-  "Pressure-test the non-lake thesis together in 15–20 minutes.",
-  "Pick one North DFW location profile worth diligencing first.",
-  "If the thesis holds, define a structure where I stay involved as founding concept partner.",
+  "Pressure-test the 'Anna Sandbox' vs. 'Eldorado Flagship' timelines.",
+  "Define the 'Annex' partnership structure for existing ranges.",
+  "Confirm a structure where I stay involved as founding concept partner.",
 ];
 
 const navItems = [
+  { href: "#the-update", label: "The Update" },
+  { href: "#mvp", label: "Low-Friction MVP" },
+  { href: "#economics", label: "Economics" },
   { href: "#thesis", label: "Thesis" },
-  { href: "#behavior", label: "Behavior" },
-  { href: "#market", label: "Market" },
-  { href: "#pros", label: "Pro Angle" },
-  { href: "#sites", label: "Location" },
-  { href: "#proof", label: "Proof" },
+  { href: "#sites", label: "Scale" },
 ];
 
 export default function ChrisBriefPage() {
@@ -147,17 +146,16 @@ export default function ChrisBriefPage() {
             Only Aces
           </Link>
           <h1 className="section-title mt-6 max-w-5xl">
-            The lake was never the business.<br />The prize behavior is.
+            De-risking the "Aces" Thesis.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-white/74">
-            A land-based flagship built around one iconic shot, visible prize
-            gravity, and a format that can scale without natural water.
+            "I think you're onto something." — Now the goal is to prove it without the "bet-the-farm" exposure.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-3">
-            <span className="chris-chip">111-yard challenge</span>
-            <span className="chris-chip">North DFW flagship</span>
-            <span className="chris-chip">Prize-first economics</span>
-            <span className="chris-read-badge">5 min read</span>
+            <span className="chris-chip">Capital Efficient MVP</span>
+            <span className="chris-chip">Revenue-Share Model</span>
+            <span className="chris-chip">Low-Friction Entry</span>
+            <span className="chris-read-badge">Updated Apr 14</span>
           </div>
         </div>
       </section>
@@ -174,6 +172,95 @@ export default function ChrisBriefPage() {
           </div>
         </nav>
       </div>
+
+      {/* ─── 0. THE UPDATE ────────────────────────────────────────────────── */}
+      <section id="the-update" className="container-frame pt-10 md:pt-14">
+        <div className="chris-card rounded-[34px] bg-white/[0.03] border border-white/10 px-6 py-7 md:px-8 md:py-8">
+          <div className="eyebrow text-blue-400">The "Backyard" Logic</div>
+          <div className="mt-6 grid gap-8 md:grid-cols-2">
+            <div>
+              <h2 className="font-display text-3xl leading-tight tracking-tight text-white">
+                Resource Optimization vs. Location Scarcity.
+              </h2>
+              <p className="mt-4 text-white/60 leading-relaxed">
+                My original pitch for Lucas Road wasn't about the specific address—it was about <strong>de-risking</strong>. I saw what I thought was an unused resource under your control and thought: <em>"That's the perfect playground to prove the unit economics with zero rent and minimal friction."</em>
+              </p>
+              <p className="mt-4 text-white/60 leading-relaxed">
+                Now that we've cleared that up (and the city's reputation), the mission remains: <strong>How do we test this for $50k-$100k instead of $1M+?</strong>
+              </p>
+            </div>
+            <div className="chris-callout bg-blue-500/10 border-blue-500/20 px-6 py-6 rounded-2xl">
+              <p className="text-xs uppercase tracking-[0.2em] text-blue-400 font-bold mb-4">The Shift</p>
+              <h3 className="text-xl font-display text-white mb-4">From Flagship to "Annex"</h3>
+              <p className="text-sm text-white/70 leading-relaxed">
+                Instead of a massive land-based undertaking at Eldorado, we look for "Annex" opportunities: high-traffic existing venues (ranges, parks, commercial lots) where we can drop a <strong>single-lane prototype</strong> on a revenue-share basis.
+              </p>
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="text-xs text-white/40 italic">"Prove the behavior on someone else's turf first."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 0.5 THE MVP ──────────────────────────────────────────────────── */}
+      <section id="mvp" className="container-frame pt-10 md:pt-14">
+        <div className="chris-card rounded-[34px] px-6 py-7 md:px-8 md:py-8">
+          <div className="eyebrow text-gold">The Frictionless MVP</div>
+          <div className="mt-6 grid gap-8 md:grid-cols-3">
+            <div className="chris-feature p-6">
+              <h3 className="text-white font-semibold">The "Drop-In" Lane</h3>
+              <p className="mt-2 text-sm text-white/60">A self-contained, automated hitting bay and target system that can be deployed on a 0.5 acre footprint.</p>
+            </div>
+            <div className="chris-feature p-6">
+              <h3 className="text-white font-semibold">Revenue-Share Land</h3>
+              <p className="mt-2 text-sm text-white/60">Partner with existing range owners who have dead space. We provide the "Prize Engine," they provide the traffic.</p>
+            </div>
+            <div className="chris-feature p-6">
+              <h3 className="text-white font-semibold">Rapid Iteration</h3>
+              <p className="mt-2 text-sm text-white/60">Use a stock-tank target and basic camera stack to validate the jackpot behavior before investing in the "Flagship" aesthetic.</p>
+            </div>
+          </div>
+          
+          <div className="faint-rule my-8" />
+          
+          <div className="grid gap-8 md:grid-cols-[1fr_1.2fr] items-center">
+            <div className="bg-gradient-to-br from-blue-500/20 to-transparent p-6 rounded-3xl border border-white/10">
+              <p className="text-xs uppercase tracking-[0.2em] text-blue-400 font-bold mb-4">Physical Growth Hack</p>
+              <h3 className="text-2xl font-display text-white mb-4">The 40-Foot Beacon</h3>
+              <p className="text-sm text-white/70 leading-relaxed">
+                At the Anna site (ETJ), we aren't limited by standard city sign ordinances. We turn the 40-foot net poles into a <strong>Marketing Tower</strong>.
+              </p>
+              <ul className="mt-4 space-y-3">
+                <li className="flex items-center gap-2 text-xs text-white/60">
+                  <span className="text-blue-400">✓</span> Visible from Hwy 5 (0.6 miles away)
+                </li>
+                <li className="flex items-center gap-2 text-xs text-white/60">
+                  <span className="text-blue-400">✓</span> Zero-permit "Vegas-style" lit signage
+                </li>
+                <li className="flex items-center gap-2 text-xs text-white/60">
+                  <span className="text-blue-400">✓</span> Bonus: High-visibility ad inventory for site partners
+                </li>
+              </ul>
+            </div>
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <Image
+                src="/images/exterior.png"
+                alt="Visibility concept"
+                fill
+                className="object-cover opacity-60 grayscale"
+                unoptimized
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center px-6">
+                  <div className="w-1 h-32 bg-blue-500 mx-auto mb-4 shadow-[0_0_20px_rgba(59,130,246,0.8)]" />
+                  <p className="text-[0.6rem] uppercase tracking-[0.3em] text-blue-400 font-bold">40ft Marketing Tower</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ─── 1. THESIS ────────────────────────────────────────────────────── */}
       <section id="thesis" className="container-frame pt-10 md:pt-14">
@@ -323,6 +410,49 @@ export default function ChrisBriefPage() {
                   </a>
                 </article>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 3.5 THE ECONOMICS ────────────────────────────────────────────── */}
+      <section id="economics" className="container-frame pt-10 md:pt-14">
+        <div className="chris-card rounded-[36px] bg-gradient-to-b from-white/[0.05] to-transparent px-6 py-7 md:px-8 md:py-8 border border-white/10">
+          <div className="eyebrow text-green-400">The Math</div>
+          <div className="mt-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <h2 className="font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white">
+                Premium impulse pricing.<br />Not volume-based buckets.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-white/70">
+                The error most ranges make is competing on volume (cost per ball). Only Aces competes on the <strong>moment</strong>. By treating each shot as a high-stakes event, the margin per ball is effectively 10-20x a traditional range.
+              </p>
+              
+              <div className="mt-8 grid grid-cols-2 gap-4">
+                <div className="bg-white/5 rounded-2xl p-4 border border-white/5">
+                  <p className="text-[0.6rem] uppercase tracking-widest text-white/40 mb-1">Pricing Model</p>
+                  <p className="text-xl font-display text-white">1 for $10</p>
+                  <p className="text-sm text-white/60 italic">3 for $20 • 20 for $60</p>
+                </div>
+                <div className="bg-green-500/10 rounded-2xl p-4 border border-green-500/20">
+                  <p className="text-[0.6rem] uppercase tracking-widest text-green-400/70 mb-1">Y1 Target Profit</p>
+                  <p className="text-2xl font-display text-white">~$300k</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center gap-6">
+              <div className="chris-feature px-6 py-6 border-l-2 border-green-500/40 bg-white/[0.02]">
+                <h3 className="text-white font-semibold">The "Jackpot" Multiplier</h3>
+                <p className="mt-2 text-sm text-white/60 leading-relaxed">
+                  Profitability scales non-linearly. As the prize grows, the "cost to acquire a shot" drops as the jackpot itself does the marketing. Year 5 potential exceeds $1.3M annually per site.
+                </p>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="h-1 bg-green-500/20 rounded-full" />
+                <div className="h-1 bg-green-500/50 rounded-full" />
+                <div className="h-1 bg-green-500 rounded-full" />
+              </div>
             </div>
           </div>
         </div>
