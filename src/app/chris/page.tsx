@@ -92,7 +92,7 @@ export default function ChrisPlanPage() {
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                   <div className="text-xs uppercase tracking-widest text-white/40 mb-1">Lease</div>
-                  <div className="text-xl font-display">$2,500/mo</div>
+                  <div className="text-xl font-display">$2,500/mo <span className="text-[0.65rem] text-white/40 block">per 1.25 AC / 5 AC available</span></div>
                 </div>
                 <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                   <div className="text-xs uppercase tracking-widest text-white/40 mb-1">Status</div>
