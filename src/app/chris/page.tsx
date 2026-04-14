@@ -47,15 +47,32 @@ export default function ChrisPlanPage() {
 
       {/* ─── POSSIBLE RENDERING ────────────────────────────────────────── */}
       <section className="container-frame py-16 border-b border-white/5">
-        <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-8">Possible Rendering</div>
-        <div className="relative aspect-video rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
-          <Image
-            src="/images/exterior.png"
-            alt="Only Aces Flagship Rendering"
-            fill
-            className="object-cover"
-            unoptimized
-          />
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="space-y-4">
+            <div className="text-xs uppercase tracking-[0.3em] text-white/40">Concept Rendering</div>
+            <div className="relative aspect-video rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
+              <Image
+                src="/images/exterior.png"
+                alt="Only Aces Flagship Rendering"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="text-xs uppercase tracking-[0.3em] text-white/40">Visual Motion</div>
+            <div className="relative aspect-video rounded-[40px] overflow-hidden border border-white/10 shadow-2xl bg-black">
+              <video 
+                src="/videos/aces-concept.mp4" 
+                controls 
+                autoPlay 
+                muted 
+                loop 
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
