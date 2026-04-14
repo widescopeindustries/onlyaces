@@ -205,24 +205,24 @@ export default function ChrisPlanPage() {
           
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
-              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Pricing</div>
+              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Lab Pricing</div>
               <div className="text-2xl font-display">$3 / Ball</div>
-              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Blended Avg</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Blended Avg (Phase 1)</div>
             </div>
             <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
-              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">OpEx</div>
-              <div className="text-2xl font-display">$10k / Mo</div>
-              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Incl. Labor/Lease</div>
+              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Break-Even</div>
+              <div className="text-2xl font-display">11 Balls / Hr</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">To cover $10k/mo OpEx</div>
             </div>
             <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
-              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Volume Goal</div>
+              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Lab Profit Goal</div>
               <div className="text-2xl font-display">38 Balls / Hr</div>
               <div className="text-[0.6rem] text-white/40 mt-1 uppercase">To hit $300k/yr Profit</div>
             </div>
             <div className="bg-green-500/10 p-6 rounded-2xl border border-green-500/20">
-              <div className="text-xs uppercase tracking-widest text-green-400/50 mb-2">The Upside</div>
+              <div className="text-xs uppercase tracking-widest text-green-400/50 mb-2">Scale Potential</div>
               <div className="text-2xl font-display">$1.3M+</div>
-              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Year 5 Potential</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Phase 2 @ $10/ball pricing</div>
             </div>
           </div>
         </section>
