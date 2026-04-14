@@ -88,6 +88,48 @@ export default function ChrisPlanPage() {
         </div>
       </section>
 
+      {/* ─── MARKET GRAVITY ────────────────────────────────────────────── */}
+      <section className="container-frame py-20 border-b border-white/5">
+        <div className="text-xs uppercase tracking-[0.3em] text-blue-400 font-bold mb-10">The Market Gravity</div>
+        <div className="grid gap-12 md:grid-cols-2 items-center">
+          <div className="space-y-8">
+            <h2 className="font-display text-4xl md:text-5xl leading-tight">
+              If it works in Taupo, it <span className="italic text-white/60 text-3xl md:text-4xl">crushes</span> in DFW.
+            </h2>
+            <div className="space-y-6 text-lg text-white/60 leading-relaxed">
+              <p>
+                The original model was proven in Lake Taupo, NZ—a town of 26,000. 
+                Our target is the epicenter of the global golf world.
+              </p>
+              <ul className="grid grid-cols-2 gap-6 text-sm">
+                <li className="space-y-1">
+                  <div className="text-white font-bold text-xl">$14.2B</div>
+                  <div className="text-white/40 uppercase tracking-widest text-[0.6rem]">Texas Golf Economy</div>
+                </li>
+                <li className="space-y-1">
+                  <div className="text-white font-bold text-xl">200+</div>
+                  <div className="text-white/40 uppercase tracking-widest text-[0.6rem]">DFW Golf Courses</div>
+                </li>
+                <li className="space-y-1">
+                  <div className="text-white font-bold text-xl">~20</div>
+                  <div className="text-white/40 uppercase tracking-widest text-[0.6rem]">PGA Pros in Area</div>
+                </li>
+                <li className="space-y-1">
+                  <div className="text-white font-bold text-xl">PGA HQ</div>
+                  <div className="text-white/40 uppercase tracking-widest text-[0.6rem]">Frisco (15 mins away)</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="chris-callout p-8 bg-blue-500/5 border border-blue-500/20 rounded-3xl">
+            <p className="text-white text-lg leading-relaxed italic">
+              "Texas ranks 2nd nationally for on-course participation with 1.89 million golfers—a figure that could fill AT&T Stadium 23 times."
+            </p>
+            <div className="mt-6 text-xs uppercase tracking-widest text-white/30">— 2025 Texas Golf Economic Impact Report</div>
+          </div>
+        </div>
+      </section>
+
       <div className="container-frame py-20 space-y-32">
         
         {/* ─── PHASE 1: THE MCKINNEY LAB ────────────────────────────────── */}
