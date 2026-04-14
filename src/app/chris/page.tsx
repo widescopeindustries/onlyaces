@@ -79,7 +79,7 @@ const siteCandidates = [
     title: "2895 CR 341, McKinney, TX",
     strength: "The 'Goldilocks' Sandbox (Zero Restrictions)",
     risk:
-      "1.25 - 5 acres outside city limits. Listing explicitly states: 'No HOA or city restrictions.' 5 mins from TX-121. Includes existing power, water, and a 12x16 shed. At ~$2,500/mo, this is the lowest-friction, highest-gravity lab possible.",
+      "1.25 - 5 acres in McKinney ETJ. Listing explicitly seeks 'Outdoor Recreation concepts (e.g. pickleball).' 5 mins from TX-121. Includes fenced/gated yard, level grading, established power/water, and an existing 12x16 shed for our pro-shop. At $2,500/mo, this is the ultimate 'Texas Summer' prototype site with DIY climate control (Mini-split + High-pressure misters).",
     tier: "1 (Test)",
   },
   {
@@ -111,9 +111,9 @@ const edgeChoices = [
 ];
 
 const asks = [
+  "Verify power capacity at CR 341 for 12k BTU mini-split + high-pressure misters.",
   "Pressure-test the 'McKinney Sandbox' vs. 'Eldorado Flagship' timelines.",
   "Define the 'Annex' partnership structure for existing ranges.",
-  "Confirm a structure where I stay involved as founding concept partner.",
 ];
 
 const navItems = [
