@@ -11,25 +11,51 @@ export default function ChrisPlanPage() {
   return (
     <main className="chris-shell min-h-screen bg-[#07131d] text-white selection:bg-blue-500/30">
       
-      {/* ─── HERO: THE INSIGHT ────────────────────────────────────────── */}
-      <section className="relative h-[60vh] w-full overflow-hidden border-b border-white/10">
-        <Image
-          src="/images/exterior.png"
-          alt="Only Aces Rendering"
-          fill
-          className="object-cover opacity-50"
-          priority
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07131d] via-transparent to-transparent" />
-        <div className="container-frame relative z-10 flex h-full flex-col justify-end pb-16">
-          <Link href="/" className="text-xs uppercase tracking-[0.3em] text-white/40 hover:text-white transition">
-            Only Aces
-          </Link>
-          <h1 className="mt-6 font-display text-5xl md:text-7xl tracking-tighter leading-[0.9]">
-            The lake was a visual.<br />
-            <span className="text-blue-400">The math is the business.</span>
-          </h1>
+      {/* ─── OPENER: THE OPPORTUNITY ───────────────────────────────────── */}
+      <section className="relative h-[70vh] w-full overflow-hidden border-b border-white/10">
+        <a 
+          href="https://www.loopnet.com/Listing/2895-County-Road-341-McKinney-TX/38424674/" 
+          target="_blank" 
+          rel="noreferrer"
+          className="block relative h-full w-full group"
+        >
+          <Image
+            src="/images/loopnet-listing.png"
+            alt="McKinney Site Listing"
+            fill
+            className="object-cover opacity-50 transition duration-700 group-hover:scale-105 group-hover:opacity-70"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07131d] via-transparent to-transparent" />
+          <div className="container-frame relative z-10 flex h-full flex-col justify-end pb-16">
+            <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">
+              Current Target Site: McKinney ETJ
+            </div>
+            <h1 className="font-display text-5xl md:text-7xl tracking-tighter leading-[0.9]">
+              The lake was a visual.<br />
+              <span className="text-blue-400">The math is the business.</span>
+            </h1>
+            <div className="mt-8">
+              <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest">
+                View Site on LoopNet
+              </span>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      {/* ─── POSSIBLE RENDERING ────────────────────────────────────────── */}
+      <section className="container-frame py-16 border-b border-white/5">
+        <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-8">Possible Rendering</div>
+        <div className="relative aspect-video rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
+          <Image
+            src="/images/exterior.png"
+            alt="Only Aces Flagship Rendering"
+            fill
+            className="object-cover"
+            unoptimized
+          />
         </div>
       </section>
 
@@ -46,29 +72,6 @@ export default function ChrisPlanPage() {
                 <strong className="text-white block mt-2">Zero city restrictions. Zero permits.</strong>
               </p>
               
-              {/* LISTING SCREENSHOT */}
-              <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 group mt-8">
-                <a 
-                  href="https://www.loopnet.com/Listing/2895-County-Road-341-McKinney-TX/38424674/" 
-                  target="_blank" 
-                  rel="noreferrer"
-                  className="block relative h-full w-full"
-                >
-                  <Image
-                    src="/images/mckinney-listing.png"
-                    alt="McKinney Site Listing"
-                    fill
-                    className="object-cover transition duration-500 group-hover:scale-105 opacity-60 group-hover:opacity-100"
-                    unoptimized
-                  />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                    <span className="bg-white text-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest shadow-2xl">
-                      View on LoopNet
-                    </span>
-                  </div>
-                </a>
-              </div>
-
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                   <div className="text-xs uppercase tracking-widest text-white/40 mb-1">Lease</div>
@@ -79,6 +82,11 @@ export default function ChrisPlanPage() {
                   <div className="text-xl font-display text-green-400">Power/Water On-site</div>
                 </div>
               </div>
+
+              <p className="text-white/40 text-sm italic mt-4">
+                Listing explicitly seeks &quot;Outdoor Recreation concepts (e.g. pickleball).&quot; 
+                Includes fenced yard, level grading, and existing 12x16 shed.
+              </p>
             </div>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
@@ -97,8 +105,8 @@ export default function ChrisPlanPage() {
                 <span className="text-white">$4,700</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>10ft Stock Tank Target</span>
-                <span className="text-white">$800</span>
+                <span>2x 10ft Stock Tank Targets</span>
+                <span className="text-white">$1,600</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
                 <span>DIY Climate (Mini-split/Misters)</span>
@@ -110,7 +118,7 @@ export default function ChrisPlanPage() {
               </li>
               <li className="pt-2 flex justify-between font-bold text-lg text-blue-400">
                 <span>Total Upfront</span>
-                <span>~$22,170</span>
+                <span>~$22,970</span>
               </li>
             </ul>
           </div>
