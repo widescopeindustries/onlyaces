@@ -36,6 +36,9 @@ export default function ChrisPlanPage() {
               The lake was a visual.<br />
               <span className="text-blue-400">The math is the business.</span>
             </h1>
+            <p className="mt-4 font-display text-xl md:text-2xl tracking-widest text-white/60 uppercase">
+              This could be the first DFW location.
+            </p>
             <div className="mt-8">
               <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest">
                 View Site on LoopNet
