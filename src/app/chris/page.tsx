@@ -23,11 +23,11 @@ export default function ChrisPlanPage() {
             src="/images/loopnet-listing.png"
             alt="McKinney Site Listing"
             fill
-            className="object-cover opacity-50 transition duration-700 group-hover:scale-105 group-hover:opacity-70"
+            className="object-cover opacity-40 transition duration-700 group-hover:scale-105 group-hover:opacity-60"
             priority
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#07131d] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07131d] via-[#07131d]/40 to-transparent" />
           <div className="container-frame relative z-10 flex h-full flex-col justify-end pb-16">
             <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">
               Current Target Site: McKinney ETJ
@@ -36,7 +36,7 @@ export default function ChrisPlanPage() {
               The lake was a visual.<br />
               <span className="text-blue-400">The math is the business.</span>
             </h1>
-            <p className="mt-4 font-display text-xl md:text-2xl tracking-widest text-white/60 uppercase">
+            <p className="mt-4 font-display text-xl md:text-2xl tracking-[0.2em] text-blue-400 uppercase drop-shadow-[0_0_20px_rgba(96,165,250,0.5)]">
               This could be the first DFW location.
             </p>
             <div className="mt-8">
