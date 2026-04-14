@@ -86,7 +86,7 @@ export default function ChrisPlanPage() {
             <div className="space-y-6 text-lg text-white/70 leading-relaxed">
               <p>
                 A 1.25-acre "Goldilocks" site in the McKinney ETJ. 
-                <strong className="text-white block mt-2">Zero city restrictions. Zero permits.</strong>
+                <strong className="text-white block mt-2">Outside McKinney city limits (ETJ) so less red tape involved.</strong>
               </p>
               
               <div className="grid grid-cols-2 gap-4 mt-8">
