@@ -12,7 +12,7 @@ export default function ChrisPlanPage() {
     <main className="chris-shell min-h-screen bg-[#07131d] text-white selection:bg-blue-500/30">
       
       {/* ─── HERO: THE INSIGHT ────────────────────────────────────────── */}
-      <section className="relative h-[70vh] w-full overflow-hidden border-b border-white/10">
+      <section className="relative h-[60vh] w-full overflow-hidden border-b border-white/10">
         <Image
           src="/images/exterior.png"
           alt="Only Aces Rendering"
@@ -28,56 +28,136 @@ export default function ChrisPlanPage() {
           </Link>
           <h1 className="mt-6 font-display text-5xl md:text-7xl tracking-tighter leading-[0.9]">
             The lake was a visual.<br />
-            <span className="text-blue-400">The prize is the business.</span>
+            <span className="text-blue-400">The math is the business.</span>
           </h1>
         </div>
       </section>
 
       <div className="container-frame py-20 space-y-32">
         
-        {/* ─── PHASE 1: THE LAB ────────────────────────────────────────── */}
-        <section className="grid gap-12 md:grid-cols-2 items-center">
+        {/* ─── PHASE 1: THE MCKINNEY LAB ────────────────────────────────── */}
+        <section className="grid gap-12 md:grid-cols-2 items-start">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-blue-400 font-bold mb-6">Phase 1: The Lab</div>
-            <h2 className="font-display text-4xl mb-8 tracking-tight">2895 CR 341, McKinney</h2>
-            <div className="space-y-6 text-lg text-white/60 leading-relaxed">
+            <h2 className="font-display text-4xl mb-6 tracking-tight">2895 CR 341, McKinney</h2>
+            <div className="space-y-6 text-lg text-white/70 leading-relaxed">
               <p>
-                A 1.25-acre "Goldilocks" site located in the McKinney ETJ. 
+                A 1.25-acre "Goldilocks" site in the McKinney ETJ. 
                 <strong className="text-white block mt-2">Zero city restrictions. Zero permits.</strong>
               </p>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400">→</span>
-                  <span><strong>$2,500/mo</strong> lease for a fenced, gated, and level yard.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400">→</span>
-                  <span>Existing power, water, and 12x16 office shed on-site.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400">→</span>
-                  <span><strong>$25k Buildout:</strong> 40ft beacon towers + climate-controlled bay.</span>
-                </li>
-              </ul>
+              
+              {/* LISTING SCREENSHOT */}
+              <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 group mt-8">
+                <a 
+                  href="https://www.loopnet.com/Listing/2895-County-Road-341-McKinney-TX/38424674/" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="block relative h-full w-full"
+                >
+                  <Image
+                    src="/images/mckinney-listing.png"
+                    alt="McKinney Site Listing"
+                    fill
+                    className="object-cover transition duration-500 group-hover:scale-105 opacity-60 group-hover:opacity-100"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <span className="bg-white text-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest shadow-2xl">
+                      View on LoopNet
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
+                  <div className="text-xs uppercase tracking-widest text-white/40 mb-1">Lease</div>
+                  <div className="text-xl font-display">$2,500/mo</div>
+                </div>
+                <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
+                  <div className="text-xs uppercase tracking-widest text-white/40 mb-1">Status</div>
+                  <div className="text-xl font-display text-green-400">Power/Water On-site</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="relative aspect-square rounded-3xl overflow-hidden border border-white/10 bg-white/5">
-            <div className="absolute inset-0 flex items-center justify-center text-white/20 font-display text-xl uppercase tracking-widest">
-              McKinney Sandbox
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+            <h3 className="text-xs uppercase tracking-[0.2em] text-white/40 mb-6">The "Shoestring" Buildout</h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span>Netting (25k sq ft)</span>
+                <span className="text-white">$8,270</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span>15x Utility Poles ($1/ft)</span>
+                <span className="text-white">$600</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span>Hauling & Rigging</span>
+                <span className="text-white">$4,700</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span>10ft Stock Tank Target</span>
+                <span className="text-white">$800</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span>DIY Climate (Mini-split/Misters)</span>
+                <span className="text-white">$3,300</span>
+              </li>
+              <li className="flex justify-between border-b border-white/5 pb-2">
+                <span>Tracking (2x Mevo) + Misc</span>
+                <span className="text-white">$4,500</span>
+              </li>
+              <li className="pt-2 flex justify-between font-bold text-lg text-blue-400">
+                <span>Total Upfront</span>
+                <span>~$22,170</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* ─── THE BREAK-EVEN MATH ───────────────────────────────────────── */}
+        <section className="bg-gradient-to-br from-blue-500/10 to-transparent border border-white/10 rounded-[40px] p-10 md:p-16">
+          <div className="text-center mb-16">
+            <div className="text-xs uppercase tracking-[0.3em] text-blue-400 font-bold mb-4">The Floor</div>
+            <h2 className="font-display text-4xl md:text-5xl">11 Balls an Hour.</h2>
+            <p className="mt-4 text-white/40 text-lg">That is the operational break-even at a $3 blended average.</p>
+          </div>
+          
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
+              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Pricing</div>
+              <div className="text-2xl font-display">$3 / Ball</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Blended Avg</div>
+            </div>
+            <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
+              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">OpEx</div>
+              <div className="text-2xl font-display">$10k / Mo</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Incl. Labor/Lease</div>
+            </div>
+            <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
+              <div className="text-xs uppercase tracking-widest text-white/30 mb-2">Volume Goal</div>
+              <div className="text-2xl font-display">38 Balls / Hr</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">To hit $300k/yr Profit</div>
+            </div>
+            <div className="bg-green-500/10 p-6 rounded-2xl border border-green-500/20">
+              <div className="text-xs uppercase tracking-widest text-green-400/50 mb-2">The Upside</div>
+              <div className="text-2xl font-display">$1.3M+</div>
+              <div className="text-[0.6rem] text-white/40 mt-1 uppercase">Year 5 Potential</div>
             </div>
           </div>
         </section>
 
         {/* ─── PHASE 2: THE SCALE ──────────────────────────────────────── */}
-        <section className="grid gap-12 md:grid-cols-2 items-center md:flex-row-reverse">
+        <section className="grid gap-12 md:grid-cols-2 items-center">
           <div className="md:order-2">
             <div className="text-xs uppercase tracking-[0.3em] text-white/40 font-bold mb-6">Phase 2: The Scale</div>
-            <h2 className="font-display text-4xl mb-8 tracking-tight">Eldorado & 75</h2>
+            <h2 className="font-display text-4xl mb-8 tracking-tight text-blue-400">Eldorado & 75</h2>
             <p className="text-lg text-white/60 leading-relaxed">
-              Once the unit economics are dead-proven in the McKinney Lab, we hit the high-gravity 121/75 corridor. We trade "low friction" for <strong>unavoidable visibility</strong> and massive retail traffic.
+              Once the unit economics are dead-proven in the McKinney Lab, we hit the high-gravity corridors. We trade "low friction" for <strong>unavoidable visibility</strong> and premium $10/ball pricing architecture.
             </p>
           </div>
-          <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 md:order-1">
+          <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 md:order-1 grayscale hover:grayscale-0 transition duration-700">
             <Image
               src="/images/interior.png"
               alt="Flagship Interior"
@@ -85,25 +165,6 @@ export default function ChrisPlanPage() {
               className="object-cover opacity-60"
               unoptimized
             />
-          </div>
-        </section>
-
-        {/* ─── THE MATH ────────────────────────────────────────────────── */}
-        <section className="bg-white/5 border border-white/10 rounded-[40px] p-10 md:p-16 text-center">
-          <div className="text-xs uppercase tracking-[0.3em] text-green-400 font-bold mb-10">The Economics</div>
-          <div className="grid gap-12 md:grid-cols-3">
-            <div>
-              <div className="text-4xl font-display text-white">$10</div>
-              <div className="text-xs uppercase tracking-widest text-white/40 mt-2">Per Ball (Avg)</div>
-            </div>
-            <div>
-              <div className="text-4xl font-display text-white">~$300k</div>
-              <div className="text-xs uppercase tracking-widest text-white/40 mt-2">Year 1 Profit</div>
-            </div>
-            <div>
-              <div className="text-4xl font-display text-white">$1.3M+</div>
-              <div className="text-xs uppercase tracking-widest text-white/40 mt-2">Year 5 Potential</div>
-            </div>
           </div>
         </section>
 
@@ -117,7 +178,7 @@ export default function ChrisPlanPage() {
             Call Lyndon: 682.999.0953
           </a>
           <p className="mt-8 text-white/30 text-xs uppercase tracking-[0.2em]">
-            Only Aces | McKinney Lab
+            Only Aces | The McKinney Lab
           </p>
         </footer>
 
