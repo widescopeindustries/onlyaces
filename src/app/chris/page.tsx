@@ -110,27 +110,27 @@ export default function ChrisPlanPage() {
             <h3 className="text-xs uppercase tracking-[0.2em] text-white/40 mb-6">The "Shoestring" Buildout</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Netting (25k sq ft)</span>
+                <a href="https://www.usnetting.com/sports-netting/golf-netting/driving-range-netting/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">Netting (25k sq ft)</a>
                 <span className="text-white">$8,270</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>15x Utility Poles ($1/ft)</span>
+                <a href="https://www.facebook.com/groups/735361224811178/posts/1506513927695900/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">15x Utility Poles ($1/ft)</a>
                 <span className="text-white">$600</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Hauling & Rigging</span>
+                <a href="https://www.uscargocontrol.com/collections/rigging-supplies" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">Hauling & Rigging</a>
                 <span className="text-white">$4,700</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>2x 10ft Stock Tank Targets</span>
+                <a href="https://www.tractorsupply.com/tsc/product/county-line-round-galvanized-stock-tank-1100-gal" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">2x 10ft Stock Tank Targets</a>
                 <span className="text-white">$1,600</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>DIY Climate (Mini-split/Misters)</span>
+                <a href="https://www.sylvane.com/mrcool-diy-5th-gen-12k-btu-115v-mini-split-heat-pump.html" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition text-left">DIY Climate (Mini-split/Misters)</a>
                 <span className="text-white">$3,300</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Tracking (2x Mevo) + Misc</span>
+                <a href="https://flightscope.com/products/flightscope-mevo" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">Tracking (2x Mevo) + Misc</a>
                 <span className="text-white">$4,500</span>
               </li>
               <li className="pt-2 flex justify-between font-bold text-lg text-blue-400">
