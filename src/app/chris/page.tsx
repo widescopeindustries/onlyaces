@@ -122,7 +122,7 @@ export default function ChrisPlanPage() {
                 <span className="text-white">$4,700</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
-                <a href="https://www.tractorsupply.com/tsc/product/county-line-round-galvanized-stock-tank-1100-gal" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">2x 10ft Stock Tank Targets</a>
+                <a href="https://www.tractorsupply.com/tsc/product/behlen-country-10-ft-galvanized-round-tank-2177170" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">2x 10ft Stock Tank Targets</a>
                 <span className="text-white">$1,600</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-2">
