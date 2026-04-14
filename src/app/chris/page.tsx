@@ -47,13 +47,25 @@ export default function ChrisPlanPage() {
 
       {/* ─── POSSIBLE RENDERING ────────────────────────────────────────── */}
       <section className="container-frame py-16 border-b border-white/5">
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-4">
-            <div className="text-xs uppercase tracking-[0.3em] text-white/40">Concept Rendering</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-white/40">Exterior View</div>
             <div className="relative aspect-video rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
               <Image
                 src="/images/exterior.png"
                 alt="Only Aces Flagship Rendering"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="text-xs uppercase tracking-[0.3em] text-white/40">Island Target Concept</div>
+            <div className="relative aspect-video rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
+              <Image
+                src="/images/rendering-2.png"
+                alt="Alternative Concept Rendering"
                 fill
                 className="object-cover"
                 unoptimized
