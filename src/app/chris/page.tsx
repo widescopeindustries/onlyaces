@@ -76,24 +76,24 @@ const proAngle = [
 
 const siteCandidates = [
   {
-    title: "2511 CR 376, Anna, TX",
-    strength: "The Frictionless Sandbox (No Permitting)",
+    title: "2895 CR 341, McKinney, TX",
+    strength: "The 'Goldilocks' Sandbox (Zero Restrictions)",
     risk:
-      "2.39 acres outside city limits. Advertised with 'No City Permitting or C.O. required.' Includes an existing 735 SF office. At $5k/mo, this is the lowest-friction playground to prove the unit economics before hitting a high-exposure corridor.",
+      "1.25 - 5 acres outside city limits. Listing explicitly states: 'No HOA or city restrictions.' 5 mins from TX-121. Includes existing power, water, and a 12x16 shed. At ~$2,500/mo, this is the lowest-friction, highest-gravity lab possible.",
     tier: "1 (Test)",
   },
   {
     title: "Eldorado Pkwy + US-75",
     strength: "The Scale Target: Dream-corner flagship",
     risk:
-      "Unmatched retail gravity. High visibility removes the need for expensive customer acquisition. This is where we go once the Anna site proves the conversion math.",
+      "Unmatched retail gravity. High visibility removes the need for expensive customer acquisition. This is where we go once the McKinney site proves the conversion math.",
     tier: "2 (Scale)",
   },
   {
     title: "SWQ DNT + Longwood, Frisco",
     strength: "North DFW corridor",
     risk:
-      "High demographics and proximity to PGA HQ, but requires more intentional 'destination' marketing than Eldorado/75.",
+      "High demographics and proximity to PGA HQ, but requires more intentional 'destination' marketing than the 121/75 corridors.",
     tier: "3",
   },
 ];
@@ -111,7 +111,7 @@ const edgeChoices = [
 ];
 
 const asks = [
-  "Pressure-test the 'Anna Sandbox' vs. 'Eldorado Flagship' timelines.",
+  "Pressure-test the 'McKinney Sandbox' vs. 'Eldorado Flagship' timelines.",
   "Define the 'Annex' partnership structure for existing ranges.",
   "Confirm a structure where I stay involved as founding concept partner.",
 ];
